@@ -1,6 +1,8 @@
 package pl.ksolutions.leetcode;
 
 /**
+ * Difficulty: Medium
+ * <p/>
  * Suppose a sorted array is rotated at some pivot unknown to you beforehand.
  * <p/>
  * (i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2).
