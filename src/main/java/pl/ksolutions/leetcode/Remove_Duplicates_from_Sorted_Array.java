@@ -35,6 +35,17 @@ public class Remove_Duplicates_from_Sorted_Array {
         return i + 1;
     }
 
+    public int removeDuplicates2(int[] nums) {
+        int i = 0;
+        for (int j = 1; j < nums.length; j++) {
+            if (nums[j] != nums[i]) {
+                i++;
+                nums[i] = nums[j];
+            }
+        }
+        return i + 1;
+    }
+
     private void swap(int[] nums, int from, int to) {
         int tmp = nums[to];
         nums[to] = nums[from];
