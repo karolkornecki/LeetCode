@@ -17,7 +17,7 @@ package pl.ksolutions.leetcode;
 public class Add_Digits {
 
     public static void main(String[] args) {
-        System.out.print(new Add_Digits().addDigits(38));
+        System.out.print(new Add_Digits().addDigits2(38));
     }
 
     public int addDigits(int num) {
@@ -26,7 +26,6 @@ public class Add_Digits {
             return s;
         }
         return addDigits(s);
-
     }
 
     private int sum(int n) {
@@ -34,5 +33,12 @@ public class Add_Digits {
             return n;
         }
         return (n / 10) + sum(n % 10);
+    }
+
+    public int addDigits2(int num) {
+        if (num <= 9) {
+            return num;
+        }
+        return num % 9;
     }
 }
