@@ -1,4 +1,4 @@
-package pl.ksolutions.leetcode;
+package pl.ksolutions.leetcode.easy;
 
 /**
  * Difficulty: Easy
