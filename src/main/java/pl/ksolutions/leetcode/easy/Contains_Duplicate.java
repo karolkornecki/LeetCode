@@ -3,7 +3,6 @@ package pl.ksolutions.leetcode.easy;
 import org.junit.Assert;
 import pl.ksolutions.leetcode.annotations.TimeLimitExceeded;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
@@ -20,16 +19,16 @@ public class Contains_Duplicate {
 
     public static void main(String[] args) {
 
-        Assert.assertEquals(true, new Contains_Duplicate().containsDuplicate(new int[]{1,2,3,4,4,5,5,6}));
-        Assert.assertEquals(false, new Contains_Duplicate().containsDuplicate(new int[]{1,2,3,4}));
+        Assert.assertEquals(true, new Contains_Duplicate().containsDuplicate(new int[]{1, 2, 3, 4, 4, 5, 5, 6}));
+        Assert.assertEquals(false, new Contains_Duplicate().containsDuplicate(new int[]{1, 2, 3, 4}));
     }
 
     public boolean containsDuplicate(int[] nums) {
         Arrays.sort(nums);
         for (int i = 1; i < nums.length; i++) {
-           if(nums[i-1] == nums[i]){
-               return true;
-           }
+            if (nums[i - 1] == nums[i]) {
+                return true;
+            }
         }
         return false;
     }
