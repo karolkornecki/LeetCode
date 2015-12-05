@@ -1,4 +1,4 @@
-package pl.ksolutions.leetcode.easy;
+package pl.ksolutions.leetcode.easy.tree;
 
 import pl.ksolutions.leetcode.structures.TreeNode;
 
