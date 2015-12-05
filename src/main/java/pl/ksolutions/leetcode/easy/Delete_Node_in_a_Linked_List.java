@@ -1,6 +1,7 @@
 package pl.ksolutions.leetcode.easy;
 
 import org.junit.Assert;
+import pl.ksolutions.leetcode.structures.ListNode;
 
 /**
  * Difficulty: Easy
@@ -26,23 +27,5 @@ public class Delete_Node_in_a_Linked_List {
         }
         node.val = node.next.val;
         node.next = node.next.next;
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next;
-
-        public ListNode(int x, ListNode n) {
-            val = x;
-            next = n;
-        }
-
-        @Override
-        public String toString() {
-            if (next == null) {
-                return "" + val;
-            }
-            return val + next.toString();
-        }
     }
 }
