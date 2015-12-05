@@ -16,10 +16,22 @@ import pl.ksolutions.leetcode.structures.ListNode;
 public class Reverse_Linked_List {
 
     public static void main(String[] args) {
-        Assert.assertEquals("321", new Reverse_Linked_List().reverseList(new ListNode(1, new ListNode(2, new ListNode(3, null)))).toString());
-        Assert.assertEquals("654321", new Reverse_Linked_List().reverseList(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6, null))))))).toString());
+        Assert.assertEquals("321", new Reverse_Linked_List().reverseList2(new ListNode(1, new ListNode(2, new ListNode(3, null)))).toString());
+        Assert.assertEquals("654321", new Reverse_Linked_List().reverseList2(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6, null))))))).toString());
     }
 
+    //------- Recursive solutions
+    public ListNode reverseList2(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode tail = reverseList2(head.next);
+        head.next.next = head;
+        head.next = null;
+        return tail;
+    }
+
+    //------- My first solution - not optimized
     public ListNode reverseList(ListNode head) {
         int size = size(head);
 
