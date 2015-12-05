@@ -1,6 +1,7 @@
 package pl.ksolutions.leetcode.easy;
 
 import org.junit.Assert;
+import pl.ksolutions.leetcode.structures.TreeNode;
 
 /**
  * Difficulty: Easy
@@ -25,17 +26,5 @@ public class Maximum_Depth_of_Binary_Tree {
             return 0;
         }
         return Math.max(maxDepth(root.left) + 1, maxDepth(root.right) + 1);
-    }
-
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(TreeNode l, TreeNode r) {
-            left = l;
-            right = r;
-        }
     }
 }
