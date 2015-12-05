@@ -1,5 +1,7 @@
 package pl.ksolutions.leetcode.easy;
 
+import pl.ksolutions.leetcode.structures.TreeNode;
+
 /**
  * Difficulty: Easy
  * <p/>
@@ -11,7 +13,6 @@ package pl.ksolutions.leetcode.easy;
  */
 public class Same_Tree {
 
-
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if (p == null && q == null) {
             return true;
@@ -20,15 +21,5 @@ public class Same_Tree {
             return false;
         }
         return p.val == q.val && isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
-    }
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }
