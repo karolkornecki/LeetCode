@@ -1,4 +1,4 @@
-package pl.ksolutions.leetcode.easy;
+package pl.ksolutions.leetcode.easy.arrays;
 
 import org.junit.Assert;
 import pl.ksolutions.leetcode.annotations.TimeLimitExceeded;

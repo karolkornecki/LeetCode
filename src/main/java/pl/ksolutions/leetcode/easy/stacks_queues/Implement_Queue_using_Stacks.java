@@ -1,4 +1,4 @@
-package pl.ksolutions.leetcode.easy;
+package pl.ksolutions.leetcode.easy.stacks_queues;
 
 import java.util.Stack;
 

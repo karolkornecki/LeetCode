@@ -1,4 +1,4 @@
-package pl.ksolutions.leetcode.easy.list;
+package pl.ksolutions.leetcode.easy.lists;
 
 import org.junit.Assert;
 import pl.ksolutions.leetcode.structures.ListNode;

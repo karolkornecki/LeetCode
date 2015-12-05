@@ -1,4 +1,4 @@
-package pl.ksolutions.leetcode.easy;
+package pl.ksolutions.leetcode.easy.strings;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package pl.ksolutions.leetcode.easy;
+package pl.ksolutions.leetcode.easy.numbers;
 
 import org.junit.Assert;
 
