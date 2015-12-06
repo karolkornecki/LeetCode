@@ -25,43 +25,6 @@ import java.util.List;
  */
 public class Pascals_Triangle {
 
-    public static void main(String[] args) {
-        List<Integer> r1 = new ArrayList<>();
-        r1.add(1);
-
-        List<Integer> r2 = new ArrayList<>();
-        r2.add(1);
-        r2.add(1);
-
-        List<Integer> r3 = new ArrayList<>();
-        r3.add(1);
-        r3.add(2);
-        r3.add(1);
-
-        List<Integer> r4 = new ArrayList<>();
-        r4.add(1);
-        r4.add(3);
-        r4.add(3);
-        r4.add(1);
-
-        List<Integer> r5 = new ArrayList<>();
-        r5.add(1);
-        r5.add(4);
-        r5.add(5);
-        r5.add(4);
-        r5.add(1);
-
-        List<List<Integer>> triangle = new ArrayList<>();
-        triangle.add(r1);
-        triangle.add(r2);
-        triangle.add(r3);
-        triangle.add(r4);
-        triangle.add(r5);
-
-        Assert.assertEquals(triangle, new Pascals_Triangle().generate(5));
-    }
-
-
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> triangle = new ArrayList<>();
         for (int i = 0; i < numRows; i++) {
