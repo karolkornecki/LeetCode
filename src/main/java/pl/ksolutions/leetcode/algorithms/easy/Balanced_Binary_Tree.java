@@ -1,7 +1,7 @@
 package pl.ksolutions.leetcode.algorithms.easy;
 
 import org.junit.Assert;
-import pl.ksolutions.leetcode.algorithms.structures.TreeNode;
+import pl.ksolutions.leetcode.algorithms.adt.TreeNode;
 
 /**
  * Difficulty: Easy

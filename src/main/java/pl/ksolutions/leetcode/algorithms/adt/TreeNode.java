@@ -1,4 +1,4 @@
-package pl.ksolutions.leetcode.algorithms.structures;
+package pl.ksolutions.leetcode.algorithms.adt;
 
 /**
  * @author Karol Kornecki

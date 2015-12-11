@@ -1,6 +1,6 @@
 package pl.ksolutions.leetcode.algorithms.easy
 
-import pl.ksolutions.leetcode.algorithms.structures.TreeNode
+import pl.ksolutions.leetcode.algorithms.adt.TreeNode
 import spock.lang.Specification
 
 class Binary_Tree_Level_Order_TraversalSpec extends Specification {

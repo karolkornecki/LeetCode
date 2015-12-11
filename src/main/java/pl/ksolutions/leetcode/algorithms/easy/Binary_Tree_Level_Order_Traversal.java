@@ -1,6 +1,6 @@
 package pl.ksolutions.leetcode.algorithms.easy;
 
-import pl.ksolutions.leetcode.algorithms.structures.TreeNode;
+import pl.ksolutions.leetcode.algorithms.adt.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
