@@ -3,7 +3,7 @@ package pl.ksolutions.leetcode.algorithms.easy
 import spock.lang.Specification
 
 
-class Longest_Common_PrefixTest extends Specification {
+class Longest_Common_PrefixSpec extends Specification {
 
     def "Should return longest common prefix"(String[] strs, String expected) {
 

@@ -2,7 +2,7 @@ package pl.ksolutions.leetcode.algorithms.easy
 
 import spock.lang.Specification
 
-class Factorial_Trailing_ZeroesTest extends Specification {
+class Factorial_Trailing_ZeroesSpec extends Specification {
 
     def "Should return trailing zeros number (recursive)"(int n, int expected) {
 

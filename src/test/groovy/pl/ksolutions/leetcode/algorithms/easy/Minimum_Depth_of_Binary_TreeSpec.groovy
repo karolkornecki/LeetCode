@@ -4,7 +4,7 @@ import pl.ksolutions.leetcode.algorithms.adt.TreeNode
 import spock.lang.Specification
 
 
-class Minimum_Depth_of_Binary_TreeTest extends Specification {
+class Minimum_Depth_of_Binary_TreeSpec extends Specification {
 
     def "Should return nim depth of tree"(TreeNode tree, int expected) {
 

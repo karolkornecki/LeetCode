@@ -3,7 +3,7 @@ package pl.ksolutions.leetcode.algorithms.easy
 import org.junit.Assert
 import spock.lang.Specification
 
-class Plus_OneTest extends Specification {
+class Plus_OneSpec extends Specification {
 
     def "Should add one to number"(int[] expected, int[] digits) {
 
