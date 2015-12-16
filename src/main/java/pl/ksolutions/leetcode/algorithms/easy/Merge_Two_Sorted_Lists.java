@@ -1,5 +1,7 @@
 package pl.ksolutions.leetcode.algorithms.easy;
 
+import pl.ksolutions.leetcode.algorithms.adt.ListNode;
+
 /**
  * Difficulty: Easy
  * <p/>
@@ -56,14 +58,5 @@ public class Merge_Two_Sorted_Lists {
             l2 = l2.next;
         }
         return head;
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next;
-
-        public ListNode(int x) {
-            val = x;
-        }
     }
 }
