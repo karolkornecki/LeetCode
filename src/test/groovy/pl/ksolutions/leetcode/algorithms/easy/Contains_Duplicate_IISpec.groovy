@@ -13,7 +13,7 @@ class Contains_Duplicate_IISpec extends Specification {
         result == expected
 
         where:
-        nums | k | expected
+        nums                     | k | expected
         [1, 2, 3, 1, 2, 4, 5, 6] | 3 | true
         [1, 2, 3, 1, 2, 4, 5, 6] | 2 | false
         [1, 2, 3, 1, 2, 4, 5, 6] | 1 | false
@@ -21,8 +21,8 @@ class Contains_Duplicate_IISpec extends Specification {
         [1]                      | 0 | false
         [1]                      | 1 | false
         [-1, -1]                 | 1 | true
-        [99, 99] | 2 | true
-        [1] | 1 | false
-        [1, 2] | 2 | false
+        [99, 99]                 | 2 | true
+        [1]                      | 1 | false
+        [1, 2]                   | 2 | false
     }
 }
