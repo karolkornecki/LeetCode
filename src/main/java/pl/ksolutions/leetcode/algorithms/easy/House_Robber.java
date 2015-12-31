@@ -14,10 +14,11 @@ public class House_Robber {
     public int rob(int[] nums) {
         int s1 = 0;
         int s2 = 0;
-        for (int i = 0, j = 1; i < nums.length; i += 2, j += 2) {
-            s1 += nums[i];
-            if (i != nums.length - 1) {
-                s2 += nums[j];
+        for (int i = 0; i < nums.length; i++) {
+            if (i % 2 == 0) {
+                s1 = Math.max(s1 + nums[i], s2);
+            } else {
+                s2 = Math.max(s2 + nums[i], s1);
             }
         }
         return Math.max(s1, s2);

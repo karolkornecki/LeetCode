@@ -1,7 +1,5 @@
 package pl.ksolutions.leetcode.algorithms.medium;
 
-import java.util.Arrays;
-
 /**
  * Difficulty: Medium
  * <p>
@@ -22,22 +20,33 @@ import java.util.Arrays;
  */
 public class Coin_Change {
 
-    private int coinChange(int[] coins, int amount) {
-        int r = change(coins, amount);
-        return r == 0 ? -1 : r;
-    }
 
-    private int change(int[] coins, int amount) {
-        if (amount == 0) {
-            return 1;
-        }
-        if (amount < 0) {
+    public int coinChange(int[] coins, int amount) {
+        if (amount <= 0) {
             return 0;
         }
-        if (coins.length == 0 && amount > 0) {
-            return 0;
-        }
-        return coinChange(Arrays.copyOfRange(coins, 0, coins.length - 1), amount) + coinChange(coins, amount - coins[coins.length - 1]);
+        return 0;
 
     }
+
+
+//
+//    private int coinChangePossibleWays(int[] coins, int amount) {
+//        int r = change(coins, amount);
+//        return r == 0 ? -1 : r;
+//    }
+//
+//    private int change(int[] coins, int amount) {
+//        if (amount == 0) {
+//            return 1;
+//        }
+//        if (amount < 0) {
+//            return 0;
+//        }
+//        if (coins.length == 0 && amount > 0) {
+//            return 0;
+//        }
+//        return coinChangePossibleWays(Arrays.copyOfRange(coins, 0, coins.length - 1), amount) + coinChangePossibleWays(coins, amount - coins[coins.length - 1]);
+//
+//    }
 }
