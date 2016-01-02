@@ -20,33 +20,29 @@ package pl.ksolutions.leetcode.algorithms.medium;
  */
 public class Coin_Change {
 
-
     public int coinChange(int[] coins, int amount) {
         if (amount <= 0) {
             return 0;
         }
-        return 0;
+        int[] dp = new int[amount + 1];
+        for (int i = 0; i < dp.length; i++) {
+            dp[i] = Integer.MAX_VALUE;
+        }
+        dp[0] = 0;
 
+        for (int i = 1; i <= amount; i++) {
+            for (int j = 0; j < coins.length; j++) {
+                if (coins[j] <= i) {
+                    int current = dp[i - coins[j]];
+                    if (current != Integer.MAX_VALUE) {
+                        dp[i] = Math.min(current + 1, dp[i]);
+                    }
+                }
+            }
+        }
+        if (dp[dp.length - 1] == Integer.MAX_VALUE) {
+            return -1;
+        }
+        return dp[dp.length - 1];
     }
-
-
-//
-//    private int coinChangePossibleWays(int[] coins, int amount) {
-//        int r = change(coins, amount);
-//        return r == 0 ? -1 : r;
-//    }
-//
-//    private int change(int[] coins, int amount) {
-//        if (amount == 0) {
-//            return 1;
-//        }
-//        if (amount < 0) {
-//            return 0;
-//        }
-//        if (coins.length == 0 && amount > 0) {
-//            return 0;
-//        }
-//        return coinChangePossibleWays(Arrays.copyOfRange(coins, 0, coins.length - 1), amount) + coinChangePossibleWays(coins, amount - coins[coins.length - 1]);
-//
-//    }
 }
